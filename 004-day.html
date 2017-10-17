@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript map</title>
+</head>
+
+<body>
+<h3>实现一个map函数，模拟原生的map函数，map(list,iteratee)</h3>
+
+<p>通过对list里的每个元素调用转换函数 (iteratee迭代器) 生成一个与之对应的数组，iteratee传递三个参数：value 然后是迭代器 index。</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map MDN</a>
+<script>
+  function map(list, iteratee) {
+    var results = [];
+    for (var index = 0; index < list.length; index++) {
+      results[index] = iteratee(list[index], index, list);
+    }
+      return results;
+  }
+  var s = map([1, 2, 3], function (num) {
+    return num * 3;
+  })
+  console.log(s)
+</script>
+</body>
+
+</html>
