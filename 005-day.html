@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript map</title>
+</head>
+
+<body>
+<h3>实现一个find函数，模拟原生的find函数，find(list, predicate)。 </h3>
+
+<p> 在list中逐项查找，返回<b>第一个</b>通过predicate迭代函数真值检测的元素值，如果没有元素通过检测则返回 undefined。</p>
+<p>如果找到匹配的元素，函数将立即返回，不会遍历整个list。</p>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/find">find MDN</a>
+<script>
+    function find(list, predicate) {
+      for (var index = 0; index < list.length; index++) {
+        if (predicate(list[index], index, list)) {
+          return list[index];
+        }
+      }
+    }
+
+  var even = find([1, 2, 3, 4, 5, 6], function (num) {
+    return num % 2 == 0;
+  })
+ // console.log(even)//2
+</script>
+</body>
+
+</html>
