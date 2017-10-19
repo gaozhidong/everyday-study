@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>
+      实现一个filter函数
+  </h3>
+  <p>
+      模拟原生的filter函数，filter(list, predicate)。
+  </p>
+  <p>
+      遍历list中的每个值，返回所有通过predicate真值检测的元素所组成的数组。
+  </p>
+
+  <a href="">filter() MDN</a>
+
+  <script>
+      function filter(list, predicate) {
+        var results = [];
+        for (var index = 0; index < list.length; index++) {
+          if (predicate(list[index], index, list)) {
+            results.push(list[index]);
+          }
+        }
+        return results;
+      }
+
+
+    var events = filter([1, 2, 3, 4, 5, 6], function (num) {
+        return num % 2 == 0;
+      })
+      console.log(events) //2, 4, 6;
+  </script>
+</body>
+</html>
