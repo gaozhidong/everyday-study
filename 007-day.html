@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>
+    实现一个invoke函数，invoke(list, methodName, *arguments)
+  </h3>
+  <p>
+    在list的每个元素上执行methodName方法。
+  </p>
+  <p>
+    任何传递给invoke的额外参数，invoke都会在调用methodName方法的时候传递给它。
+  </p>
+  <p>
+      invoke([[5,1,7],[3,2,1]],'sort'); //[[1, 5, 7],[1,2,3]]
+  </p>
+  <script>
+    function isFunction() {
+      return typeof obj == 'function'
+    };
+
+    function invoke(list, method) {
+      console.log(list)
+      var args = Array.prototype.slice.call(arguments, 2);
+      var isFunc = isFunction(method);
+      return list.map(function (value) {
+        var func = isFunc ? method : value[method];
+        return func == null ? func : func.apply(value, args);
+      });
+    };
+
+    invoke([1,5,2],'sort');
+  </script>
+</body>
+</html>
