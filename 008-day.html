@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>实现一个parseQuery函数，能够解析location的search字符串（不包含'?'）</p>
+
+  <p>输入一个search，输出一个object，同名参数则是会成为数组</p>
+
+
+  <script>
+
+    function parseQuery(query){
+      var reg = /([^&=\s]+)[=\s]?([^&=\s]*)/g;
+      var obj = {};
+      while(reg.exec(query)){
+        var key = RegExp.$1;
+        var value = RegExp.$2;
+        if(Array.isArray(obj[key])&&value !== ''){
+          obj[key].push(value);
+          continue;
+        }
+        if(obj.hasOwnProperty(key)&&value !== ''){
+          obj[key]=[obj[key],value];
+          continue;
+        }
+        obj[key] = value;
+      }
+      return obj
+    }
+
+
+    var search = "name=gao&age=18&address=qwe&address=poi&kaka"
+    var result = parseQuery(search)
+
+    console.log(result)
+
+
+  </script>
+</body>
+</html>
