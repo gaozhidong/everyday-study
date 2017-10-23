@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>create</title>
+</head>
+<body>
+  <p>实现一个create函数</p>
+  <script>
+    function create(subscriber){
+      var observable = {
+        subscribe:function(observer){
+          subscriber(observer)
+        }
+      };
+      return observable;
+    }
+
+
+
+
+    var observable = create(function(observer){
+      // console.log(observer)
+      observer.next(1);
+      observer.next(2);
+      observer.next(3);
+      observer.complete();
+      observer.next('still work');
+    })
+    
+    var observer = {
+      next:function(value){
+        console.log(value);
+      },
+      complete:function(){
+        console.log('complete')
+      }
+    }
+
+    observable.subscribe(observer);
+    //1
+    //2
+    //3
+    //'complete'
+    //'still work'
+  </script>
+</body>
+</html>
