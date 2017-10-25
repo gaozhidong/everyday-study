@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>
+    有两个从小到大已经排序完成的数组，长度分别是n和m，单个数组的不存在重复元素，问如何在m+n次操作下，完成去重，得到一个完整的非重数组。
+  </p>
+
+  <script>
+    function distinctBySortArray(array1, array2) {
+      var n = array1.length;
+      var m = array2.length;
+      var result = [];
+
+      for (var i = 0,j = 0; i < n && j < m;) {
+        var temp1 = array1[i];
+        var temp2 = array2[j];
+        // debugger;
+        if (temp1 < temp2) {
+          i++;
+          result.push(temp1);
+        } else if (temp1 > temp2) {
+          j++;
+          result.push(temp2);
+        } else if (temp1 === temp2) {
+          j++;
+        }
+      }
+      if (i < n) {
+        return result.concat(array1.slice(i, n));
+      }
+      if (j < m) {
+        return result.concat(array2.slice(j, m));
+      }
+      return result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //
+    var array1 = [1, 2, 3, 4, 5];
+    var array2 = [4, 5, 6, 7, 8, 9];
+
+    console.log(distinctBySortArray(array1, array2));//[1,2,3,4,5,6,7,8,9]
+  </script>
+
+
+
+</body>
+
+
+
+</html>
