@@ -16,7 +16,8 @@ var obj = {
     method: function (fn) {
         // fn();
         arguments[0]();
-        fn.call(obj, 12); // 和12没什么关系， 那么12到底有什么用呢？
+        // fn.call(obj, 12); // 和12没什么关系， 那么12到底有什么用呢？
+        fn.call(obj)
     }
 };
 obj.method(fn, 1);
