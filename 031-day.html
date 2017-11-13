@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>两列等高布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .layout,.o-left,.o-right,.footer{
+            display: block;
+        }
+        .layout{
+            display: flex;
+            justify-content: space-between; /*两端对齐*/
+            width: 400px;
+            margin:0 auto;
+            color:gray;
+            border:1px solid currentColor;
+            overflow: hidden;
+        }
+         .o-left,.o-right{
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+            color:black;
+        }
+        .u-text-center{
+            text-align: center!important;
+        }
+        .o-left{
+            background-color: aquamarine;
+        }
+        .o-right{
+            background-color: bisque;
+        } 
+    </style>
+</head>
+<body>
+    <main class="layout">
+        <aside class="o-left j-left">
+            <li>这是第一行</li>
+            <li>这是第一行</li>
+            <li>这是第一行</li>
+            <li>这是第一行</li>
+            <li>这是第一行</li>
+        </aside>
+        <aside class="o-right">
+            <li>这是第一行</li>
+        </aside>
+    </main>
+    <footer class="u-text-center footer">
+        <button class="j-btn">左侧添加内容</button>
+    </footer>
+    <script type="application/ecmascript">
+        var left = document.querySelector('.j-left')
+        document.querySelector('.j-btn').addEventListener('click',function (event) {
+            var li = document.createElement('li');
+            var text = document.createTextNode('这是添加的内容');
+            li.appendChild(text);
+            left.appendChild(li);
+        })
+    </script>
+
+</body>
+</html>
