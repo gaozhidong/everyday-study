@@ -7,3 +7,6 @@
 
 ##### 002-day 实现一个reduce函数
 [reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/002-day.html)
+
+##### 003-day css hover
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/003-day.html)
