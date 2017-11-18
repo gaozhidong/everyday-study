@@ -10,3 +10,10 @@
 
 ##### 003-day css hover
 [reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/003-day.html)
+
+##### 004-day 实现一个map函数
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/004-day.html)
+
+##### 005-day 实现一个find函数
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/005-day.html)
+
