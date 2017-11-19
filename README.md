@@ -17,3 +17,15 @@
 ##### 005-day 实现一个find函数
 [reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/005-day.html)
 
+##### 006-day 实现一个filter函数
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/006-day.html)
+
+##### 007-day 实现一个invoke(list, methodName, *arguments)
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/007-day.html)
+
+##### 008-day 实现一个parseQuery函数
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/008-day.html)
+
+##### 009-day 浮点数点左边的数每三位添加一个逗号
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/009-day.html)
+
