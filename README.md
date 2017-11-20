@@ -29,3 +29,17 @@
 ##### 009-day 浮点数点左边的数每三位添加一个逗号
 [reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/009-day.html)
 
+##### 010-day create函数
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/010-day.html)
+
+##### 011-day 冒泡排序
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/011-day.js)
+
+##### 012-day 排序
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/012-day.html)
+
+##### 013-day 青蛙向上跳台阶
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/013-day.js)
+
+##### 014-day 青蛙向上跳台阶
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/014-day.js)
