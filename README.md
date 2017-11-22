@@ -43,3 +43,28 @@
 
 ##### 014-day 青蛙向上跳台阶
 [reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/014-day.js)
+
+##### 015-day 矩形覆盖
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/015-day.js)
+
+##### 016-day 找出数组中任意一个重复的数字 (输出第一个重复的数)
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/016-day.js)
+
+##### 017-day localStorage
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/017-day.js)
+
+##### 018-day this的类型
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/018-day.js)
+
+##### 019-day 执行上下文
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/019-day.js)
+
+##### 020-day 执行上下文的生命周期
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/020-day.html)
+
+##### 021-day 从数组中取出几个元素
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/021-day.js)
+
+##### 022-day map
+[reduce函数](https://rawgit.com/gaozhidong/everyday-study/master/022-day.js)
+
