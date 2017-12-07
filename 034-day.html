@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DOM 操作</title>
+</head>
+<body>
+  题目来源：<a href="https://www.v2ex.com/t/328943?p=1">https://www.v2ex.com/t/328943?p=1</a>
+  <ul id="list" class="foo">
+      <li>#0</li>
+      <li><span>#1</span></li>
+      <li>#2</li>
+      <li>#3</li>
+      <li><ul><li>#4</li></ul></li>
+      ...
+      <li><a href="//v2ex.com">#99998</a></li>
+      <li>#99999</li>
+      <li>#100000</li>
+    </ul>
+    为 <ul> 添加一个类 bar
+    删除第 10 个 <li>
+    在第 500 个 <li> 后面增加一个 <li> , 其文字内容为 <v2ex.com />
+    点击任意 <li> 弹窗显示其为当前列表中的第几项。
+    要求：使用原生JS
+
+
+
+
+    <script>
+
+      //添加类
+      let bar = document.querySelector('li ul')
+      bar.className = bar.className + ' bar'
+      //新式写法 (IE10+) `bar.classList.add("bar")` 
+      //拓展: 
+      // `classList` 是一个只读属性,指向 `DOMTokenList` 
+      // 还有如下方法: `add(String [,String])`, `remove(String[,String])`,`item(Number)`,`toggle(String[, force])` 
+
+      
+      //删除第十个
+      let ten = document.querySelectorAll('li')[9]
+      ten.parentNode.removeChild(ten)
+      
+      //在第6个li后面添加一个
+      let tag = document.createElement('li')
+      tag.innerHTML = 'v2ex.com'
+      let six = document.querySelectorAll('li')[6]
+      six.parentNode.insertBefore(tag,six)
+      
+      //点击任意li 弹出当前是第几项
+      document.querySelectorAll('li').forEach((item,i) => {
+          item.addEventListener('click',() => {
+              event.stopPropagation()
+              alert(i)
+          })
+    })
+    
+    </script>
+  
+
+  参考链接：<a href="http://jsbin.com/filecaw/edit?html,js,output">参考答案</a>
+</body>
+</html>
