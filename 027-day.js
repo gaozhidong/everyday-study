@@ -1,13 +1,13 @@
 
 //简单理解闭包
-(function(){
+// (function(){
 
-  var local = '变量'   //局部变量
+//   var local = '变量'   //局部变量
    
-  function foo(){
-    console.log(local)
-  }
-})()
+//   function foo(){
+//     console.log(local)
+//   }
+// })()
 
 //在函数内部可访问的local变量
 
@@ -19,3 +19,33 @@
 
 
 //内存泄露 ： 用不到（访问不到）的变量，依然占居着内存空间，不能被再次利用起来
+
+
+// 使用闭包  全局变量不会被销毁 除非关掉页面
+// function bindName(name){
+//   return function(action){
+//     console.log(`${name} is ${action}ing`)
+//   }
+// }
+
+//简化了传递的参数
+// var doing = bindName('gao')
+// doing('work')
+// doing('play')
+
+
+//以上代码相当于
+function bindName(){
+  var name = arguments[0]
+  function fn (action){
+    console.log(`${name} is ${action}ing`)
+  }
+  return fn
+}
+var doing = bindName('gao')
+doing('work')
+doing('play')
+
+var doing2 = bindName('wang')
+doing2('work')
+doing2('play')
