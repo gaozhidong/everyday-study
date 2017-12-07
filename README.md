@@ -95,14 +95,14 @@
 ##### 031-day 两列等高布局
 [两列等高布局](https://rawgit.com/gaozhidong/everyday-study/master/031-day.html)
 
-##### 032-day DOM 操作
-[DOM 操作](https://rawgit.com/gaozhidong/everyday-study/master/032-day.html)
+##### 032-day 构造函数创建对象
+[DOM 操作](https://rawgit.com/gaozhidong/everyday-study/master/032-day.md)
 
 ##### 033-day Ubuntu 安装
 [Ubuntu 安装](https://rawgit.com/gaozhidong/everyday-study/master/033-day.md)
 
-##### 034-day MongoDB
-[MongoDB](https://rawgit.com/gaozhidong/everyday-study/master/034-day.md)
+##### 034-day DOM 操作
+[DOM 操作](https://rawgit.com/gaozhidong/everyday-study/master/032-day.html)
 
 ##### 035-day node 学习笔记
 [node 学习笔记](https://rawgit.com/gaozhidong/everyday-study/master/035-day.md)
