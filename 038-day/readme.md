@@ -5,6 +5,7 @@
 ## 响应式的不同方案
 
 ## get和post的区别
+  []()
 
 ## SEO技巧与坑
 
@@ -38,3 +39,27 @@
 * 获取某些属性
 
 * 改变元素的一些样式，调整浏览器窗口大小等
+
+
+面试链接
+
+[https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn](https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn)
+[https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/Translations/Chinese/README.md](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/Translations/Chinese/README.md)
+[https://github.com/h5bp/Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+
+## 查找HTML中各个标签的个数
+
+```
+function countTag(dom,countObj){
+	countObj[dom.tagName] = countObj[dom.tagName]?countObj[dom.tagName]+1:1
+	if (dom.children.length == 0){
+		return
+	}
+	for(var i = 0;i<dom.children.length;i++){
+		countTag(dom.children[i],countObj)
+	}
+}
+var obj = {}
+countTag(document.children[0],obj)
+console.log(obj)
+```

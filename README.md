@@ -54,7 +54,7 @@
 [localStorage](https://github.com/gaozhidong/everyday-study/blob/master/017-day.js)
 
 ##### 018-day this的类型
-[this的类型](https://github.com/gaozhidong/everyday-study/blob/master/018-day.js)
+[this的类型](https://github.com/gaozhidong/everyday-study/blob/master/018-day.md)
 
 ##### 019-day 执行上下文
 [执行上下文](https://github.com/gaozhidong/everyday-study/blob/master/019-day.js)
