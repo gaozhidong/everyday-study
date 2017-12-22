@@ -1,11 +1,22 @@
 # 面试题和基础知识
 
-## 链表反转
+## 单链表反转
+
+**wiki百科**对[链表](https://zh.wikipedia.org/wiki/%E9%93%BE%E8%A1%A8)的介绍
+
+>链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。
 
 ## 响应式的不同方案
 
+**为什么要做响应式**
+
+一般是为了提高用户体验，保证在不同分辨率下都有友好的体验。
+
+**方法**很简单就是多写**CSS** ！！！
+
+
 ## get和post的区别
-  []()
+  [get和post的区别](https://github.com/gaozhidong/everyday-study/blob/master/038-day/GET%E5%92%8CPOST%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
 ## SEO技巧与坑
 
@@ -51,11 +62,11 @@
 
 ```
 function countTag(dom,countObj){
-	countObj[dom.tagName] = countObj[dom.tagName]?countObj[dom.tagName]+1:1
+	countObj[dom.tagName] = countObj[dom.tagName] ? countObj[dom.tagName] + 1 : 1
 	if (dom.children.length == 0){
 		return
 	}
-	for(var i = 0;i<dom.children.length;i++){
+	for(var i = 0;i < dom.children.length; i++){
 		countTag(dom.children[i],countObj)
 	}
 }
