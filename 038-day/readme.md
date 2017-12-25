@@ -18,8 +18,6 @@
 ## get和post的区别
   [get和post的区别](https://github.com/gaozhidong/everyday-study/blob/master/038-day/GET%E5%92%8CPOST%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
-## SEO技巧与坑
-
 ## MVC和MVVM的区别
 
 ## em，rem，px，vh，vw

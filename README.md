@@ -2,41 +2,41 @@
 
 每天学习一点点
 
-##### 001-day css模拟弹窗
-[css模拟弹窗](https://gaozhidong.github.io/everyday-study/001-day.html)
+##### css模拟弹窗
+[css模拟弹窗](https://gaozhidong.github.io/everyday-study/css模拟弹窗.html)
 
-##### 002-day 实现一个reduce函数
-[reduce函数](https://gaozhidong.github.io/everyday-study/002-day.html)
+##### 实现一个reduce函数
+[reduce函数](https://gaozhidong.github.io/everyday-study/实现一个reduce函数.html)
 
-##### 003-day css hover
-[css hover](https://gaozhidong.github.io/everyday-study/003-day.html)
+##### css hover
+[css hover](https://gaozhidong.github.io/everyday-study/css hover.html)
 
-##### 004-day 实现一个map函数
-[实现一个map函数](https://github.com/gaozhidong/everyday-study/blob/master/004-day.html)
+##### 实现一个map函数
+[实现一个map函数](https://github.com/gaozhidong/everyday-study/blob/master/实现一个map函数.html)
 
-##### 005-day 实现一个find函数
-[实现一个find函数](https://github.com/gaozhidong/everyday-study/blob/master/005-day.html)
+##### 实现一个find函数
+[实现一个find函数](https://github.com/gaozhidong/everyday-study/blob/master/实现一个find函数.html)
 
-##### 006-day 实现一个filter函数
-[实现一个filter函数](https://github.com/gaozhidong/everyday-study/blob/master/006-day.html)
+##### 实现一个filter函数
+[实现一个filter函数](https://github.com/gaozhidong/everyday-study/blob/master/实现一个filter函数.html)
 
-##### 007-day 实现一个invoke(list, methodName, *arguments)
-[实现一个invoke](https://github.com/gaozhidong/everyday-study/blob/master/007-day.html)
+##### 实现一个invoke(list, methodName, *arguments)
+[实现一个invoke](https://github.com/gaozhidong/everyday-study/blob/master/实现一个invoke.html)
 
-##### 008-day 实现一个parseQuery函数
-[实现一个parseQuery函数](https://github.com/gaozhidong/everyday-study/blob/master/008-day.html)
+##### 实现一个parseQuery函数
+[实现一个parseQuery函数](https://github.com/gaozhidong/everyday-study/blob/master/实现一个parseQuery函数.html)
 
-##### 009-day 浮点数点左边的数每三位添加一个逗号
-[浮点数点左边的数每三位添加一个逗号](https://github.com/gaozhidong/everyday-study/blob/master/009-day.html)
+##### 浮点数点左边的数每三位添加一个逗号
+[浮点数点左边的数每三位添加一个逗号](https://github.com/gaozhidong/everyday-study/blob/master/浮点数点左边的数每三位添加一个逗号.html)
 
-##### 010-day create函数
-[create函数](https://github.com/gaozhidong/everyday-study/blob/master/010-day.html)
+##### create函数
+[create函数](https://github.com/gaozhidong/everyday-study/blob/master/create函数.html)
 
-##### 011-day 冒泡排序
-[冒泡排序](https://github.com/gaozhidong/everyday-study/blob/master/011-day.js)
+##### 冒泡排序
+[冒泡排序](https://github.com/gaozhidong/everyday-study/blob/master/冒泡排序.js)
 
-##### 012-day 排序
-[ 排序](https://github.com/gaozhidong/everyday-study/blob/master/012-day.html)
+##### 排序
+[排序](https://github.com/gaozhidong/everyday-study/blob/master/排序.html)
 
 ##### 013-day 青蛙向上跳台阶
 [青蛙向上跳台阶](https://github.com/gaozhidong/everyday-study/blob/master/013-day.js)
@@ -53,8 +53,8 @@
 ##### 017-day localStorage
 [localStorage](https://github.com/gaozhidong/everyday-study/blob/master/017-day.js)
 
-##### 018-day this的类型
-[this的类型](https://github.com/gaozhidong/everyday-study/blob/master/018-day.md)
+##### this的类型
+[this的类型](https://github.com/gaozhidong/everyday-study/blob/master/this的类型.md)
 
 ##### 019-day 执行上下文
 [执行上下文](https://github.com/gaozhidong/everyday-study/blob/master/019-day.js)
@@ -95,14 +95,14 @@
 ##### 031-day 两列等高布局
 [两列等高布局](https://github.com/gaozhidong/everyday-study/blob/master/031-day.html)
 
-##### 032-day 构造函数创建对象
-[DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/032-day.md)
+##### 构造函数创建对象
+[DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/构造函数创建对象.md)
 
-##### 033-day Ubuntu 安装
-[Ubuntu 安装](https://github.com/gaozhidong/everyday-study/blob/master/033-day.md)
+##### Ubuntu 安装
+[Ubuntu 安装](https://github.com/gaozhidong/everyday-study/blob/master/ Ubuntu 安装.md)
 
-##### 034-day DOM 操作
-[DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/032-day.html)
+##### DOM 操作
+[DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/DOM 操作.html)
 
 ##### 035-day node 学习笔记
 [node 学习笔记](https://github.com/gaozhidong/everyday-study/blob/master/035-day.md)
@@ -113,7 +113,7 @@
 ##### 037-day for...in
 [for...in](https://github.com/gaozhidong/everyday-study/blob/master/037-day.js)
 
-##### 037-day 面试题
+##### 038-day 面试题
 [面试题](https://github.com/gaozhidong/everyday-study/blob/master/038-day.md)
 
 
