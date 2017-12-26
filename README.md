@@ -99,7 +99,7 @@
 [DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/构造函数创建对象.md)
 
 ##### Ubuntu 安装
-[Ubuntu 安装](https://github.com/gaozhidong/everyday-study/blob/master/ Ubuntu 安装.md)
+[Ubuntu 安装](https://github.com/gaozhidong/everyday-study/blob/master/Ubuntu 安装.md)
 
 ##### DOM 操作
 [DOM 操作](https://github.com/gaozhidong/everyday-study/blob/master/DOM 操作.html)
