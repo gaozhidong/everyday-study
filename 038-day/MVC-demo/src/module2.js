@@ -2,11 +2,7 @@ import Controller from './Controller'
 
 new Controller({
     element: '.module2',
-    template: `
-        <span>{{number}}</span>
-        <button name="increase">+</button>
-        <button name="decrease">-</button>
-    `,
+    template: '#module2Template',
     data:{
         number:0
     },
