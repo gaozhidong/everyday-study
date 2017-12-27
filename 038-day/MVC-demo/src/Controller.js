@@ -1,4 +1,5 @@
 import $ from 'jquery'
+const Handlebars = require('handlebars')
 
 class Controller {
     constructor(options) {
@@ -6,7 +7,7 @@ class Controller {
             this[key] = options[key]
         }
         this.$element = $(options.element)
-        if(this.template && this.render){
+        if (this.template && this.render) {
             this.render()
         }
         this.bindEvents()
@@ -25,14 +26,15 @@ class Controller {
                 //     that[methodName].call(that,e)
                 // })
 
-                this.$element.on(eventType,selector,this[methodName].bind(this))
+                this.$element.on(eventType, selector, this[methodName].bind(this))
             }
-
-
-
         }
     }
+    render() {
+        let template = (this.template[0] === '#') ? (document.querySelector(this.template).innerHTML) : this.template
+        let html = Handlebars.compile(template)(this.data)
+        this.$element.html(html)
+    }
 }
-
 
 export default Controller
