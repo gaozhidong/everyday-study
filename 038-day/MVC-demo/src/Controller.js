@@ -6,6 +6,9 @@ class Controller {
             this[key] = options[key]
         }
         this.$element = $(options.element)
+        if(this.template && this.render){
+            this.render()
+        }
         this.bindEvents()
     }
     bindEvents() {

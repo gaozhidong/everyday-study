@@ -2,6 +2,14 @@ import Controller from './Controller'
 import $ from 'jquery'
 new Controller({
     element: '.module1',
+    template: `
+        <input type="text" name="number1">
+        <button name="button1">点我</button>
+        <div class="output">{{output}}</div>
+    `,
+    data: {
+        output: '111'
+    },
     events: {
         'change input': 'onChangeInput',
         'click button': 'onClickButton'
@@ -15,12 +23,9 @@ new Controller({
         console.log(input.value)
     },
     render: function (value) {
-        let $output = this.$element.find('.output')
-        if($output.length === 0){
-            $output = $('<div class="output"></div>').text(value)
-            $output.appendTo(this.$element)
-        }else{
-            $output.text(value)
-        }
+        let html = this.template.replace(/\{\{\s*(\S+)\s*\}\}/g, (match, cl) => {
+            return this.data[cl]
+        })
+        this.$element.html(html)
     }
 })
