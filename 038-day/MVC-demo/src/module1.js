@@ -1,29 +1,26 @@
 import Controller from './Controller'
-
+import $ from 'jquery'
 new Controller({
     element: '.module1',
     events: {
         'change input': 'onChangeInput',
-        'click button': 'addToCart'
+        'click button': 'onClickButton'
     },
-    addToCart: function () {
-        let value = this.$element.find('input').value
-        this.remoteAddCart(value).then(() => {
-            this.showAnimation()
-        })
+    onClickButton: function (e) {
+        let value = this.$element.find('input').val()
+        this.render(value)
     },
-    remoteAddCart: function () {
-        console.log('远程请求')
-        //$.ajax....
-        // return Promise
-        return Promise.resolve(2)
-    },
-    showAnimation: function () {
-        console.log('展示动画')
-        // this.$element.animate('...')
-    },
-    onChangeInput:function(e){
+    onChangeInput: function (e) {
         let input = e.currentTarget
         console.log(input.value)
+    },
+    render: function (value) {
+        let $output = this.$element.find('.output')
+        if($output.length === 0){
+            $output = $('<div class="output"></div>').text(value)
+            $output.appendTo(this.$element)
+        }else{
+            $output.text(value)
+        }
     }
 })
