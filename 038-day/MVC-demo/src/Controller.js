@@ -7,6 +7,9 @@ class Controller {
             this[key] = options[key]
         }
         this.$element = $(options.element)
+
+        this.init && this.init()
+
         if (this.template && this.render) {
             this.render()
         }
@@ -32,7 +35,7 @@ class Controller {
     }
     render() {
         let template = (this.template[0] === '#') ? (document.querySelector(this.template).innerHTML) : this.template
-        let html = Handlebars.compile(template)(this.data)
+        let html = Handlebars.compile(template)(this.model.data)
         this.$element.html(html)
     }
 }

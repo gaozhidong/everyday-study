@@ -1,21 +1,62 @@
 import Controller from './Controller'
+import $ from 'jquery'
+
+let model = {
+    data:{
+        number:0
+    },
+    get() {
+        return $.get('/data.json').then((response)=>{
+            this.data = response
+            return this.data
+        })
+    },
+    increase() { //向服务器发请求
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("500ms 过去了")
+                this.data.number += 1
+                resolve(this.data)
+            }, 500)
+        })
+    },
+    decrease() {//向服务器发请求
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("500ms 又过去了")
+                this.data.number -= 1
+                resolve(this.data.number)
+            }, 500)
+        })
+    }
+}
+
 
 new Controller({
     element: '.module2',
     template: '#module2Template',
-    data:{
-        number:0
-    },
+    model: model,
     events: {
         'click button[name=increase]': "increase",
         'click button[name=decrease]': "decrease"
     },
-    increase(){
-        this.data.number += 1
-        this.render()
+    init() {
+        this.model.get().then(()=>{
+            this.render()
+        })
+        $.get('/data.json').then((response) => {
+            this.data = response
+            this.render()
+        })
     },
-    decrease(){
-        this.data.number -= 1
-        this.render()
+    increase() {
+        this.model.increase().then(()=>{
+            this.render()
+        })
+    },
+    decrease() {
+        this.model.decrease().then(()=>{
+            this.render()
+        })
     }
 })
