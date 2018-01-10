@@ -54,19 +54,3 @@
 [https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/Translations/Chinese/README.md](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/Translations/Chinese/README.md)
 [https://github.com/h5bp/Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 
-## 查找HTML中各个标签的个数
-
-```
-function countTag(dom,countObj){
-	countObj[dom.tagName] = countObj[dom.tagName] ? countObj[dom.tagName] + 1 : 1
-	if (dom.children.length == 0){
-		return
-	}
-	for(var i = 0;i < dom.children.length; i++){
-		countTag(dom.children[i],countObj)
-	}
-}
-var obj = {}
-countTag(document.children[0],obj)
-console.log(obj)
-```
