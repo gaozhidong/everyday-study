@@ -62,9 +62,6 @@
 ##### 020-day 执行上下文的生命周期
 [执行上下文的生命周期](https://github.com/gaozhidong/everyday-study/blob/master/020-day.html)
 
-##### 021-day 从数组中取出几个元素
-[从数组中取出几个元素](https://github.com/gaozhidong/everyday-study/blob/master/021-day.js)
-
 ##### 022-day map
 [map](https://github.com/gaozhidong/everyday-study/blob/master/022-day.js)
 
