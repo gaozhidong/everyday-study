@@ -86,9 +86,6 @@
 ##### 029-day  [,,,].join(", ")
 [ [,,,].join(", ")](https://github.com/gaozhidong/everyday-study/blob/master/029-day.js)
 
-##### 030-day 实现函数 isInteger(x) 来判断 x 是否是整数
-[实现函数 isInteger(x) 来判断 x 是否是整数](https://github.com/gaozhidong/everyday-study/blob/master/030-day.js)
-
 ##### 031-day 两列等高布局
 [两列等高布局](https://github.com/gaozhidong/everyday-study/blob/master/031-day.html)
 
