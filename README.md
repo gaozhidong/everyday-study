@@ -38,12 +38,6 @@
 ##### 排序
 [排序](https://github.com/gaozhidong/everyday-study/blob/master/排序.html)
 
-##### 013-day 青蛙向上跳台阶
-[青蛙向上跳台阶](https://github.com/gaozhidong/everyday-study/blob/master/013-day.js)
-
-##### 014-day 青蛙向上跳台阶
-[青蛙向上跳台阶](https://github.com/gaozhidong/everyday-study/blob/master/014-day.js)
-
 ##### 015-day 矩形覆盖
 [矩形覆盖](https://github.com/gaozhidong/everyday-study/blob/master/015-day.js)
 
