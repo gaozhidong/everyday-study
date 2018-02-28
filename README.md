@@ -59,9 +59,6 @@
 ##### 022-day map
 [map](https://github.com/gaozhidong/everyday-study/blob/master/022-day.js)
 
-##### 023-day JavaScript中的稀疏数组与密集数组
-[JavaScript中的稀疏数组与密集数组](https://github.com/gaozhidong/everyday-study/blob/master/023-day.js)
-
 ##### 024-day setTimeout与循环闭包的思考题
 [setTimeout与循环闭包的思考题](https://github.com/gaozhidong/everyday-study/blob/master/024-day.js)
 
