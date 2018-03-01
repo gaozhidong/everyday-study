@@ -59,8 +59,6 @@
 ##### 022-day map
 [map](https://github.com/gaozhidong/everyday-study/blob/master/022-day.js)
 
-##### 024-day setTimeout与循环闭包的思考题
-[setTimeout与循环闭包的思考题](https://github.com/gaozhidong/everyday-study/blob/master/024-day.js)
 
 ##### 025-day 变量提升
 [变量提升](https://github.com/gaozhidong/everyday-study/blob/master/025-day.js)
@@ -69,7 +67,7 @@
 [一个插件验证代码思路](https://github.com/gaozhidong/everyday-study/blob/master/026-day.js)
 
 ##### 027-day 简单理解闭包
-[简单理解闭包](https://github.com/gaozhidong/everyday-study/blob/master/027-day.js)
+[简单理解闭包](https://github.com/gaozhidong/everyday-study/blob/master/闭包.md)
 
 ##### 028-day 转载 【数组的使用】
 [数组的使用](https://github.com/gaozhidong/everyday-study/blob/master/028-day.html)
