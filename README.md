@@ -59,10 +59,6 @@
 ##### 022-day map
 [map](https://github.com/gaozhidong/everyday-study/blob/master/022-day.js)
 
-
-##### 025-day 变量提升
-[变量提升](https://github.com/gaozhidong/everyday-study/blob/master/025-day.js)
-
 ##### 026-day 一个插件验证代码思路
 [一个插件验证代码思路](https://github.com/gaozhidong/everyday-study/blob/master/026-day.js)
 
