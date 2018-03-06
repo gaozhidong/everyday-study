@@ -18,6 +18,15 @@
 ## get和post的区别
   [get和post的区别](https://github.com/gaozhidong/everyday-study/blob/master/038-day/GET%E5%92%8CPOST%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
+## data-属性的作用是什么？
+data-为前端开发者提供自定义的属性，这些属性集可以通过对象的dataset属性获取，不支持该属性的浏览器可以通过getAttribute方法获取:
+```
+<div data-author="david" data-time="2011-06-20" data-comment-num="10">...</div>
+
+div.dataset.commentNum; // 10
+```
+需要注意的是，**data-**之后的以连字符分割的多个单词组成的属性，获取的时候使用驼峰风格。并不是所有的浏览器都支持.dataset属性，测试的浏览器中只有Chrome 和Opera 支持。
+
 ## em，rem，px，vh，vw
 
 ## 提高页面性能
